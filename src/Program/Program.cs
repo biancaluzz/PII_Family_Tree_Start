@@ -7,21 +7,21 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Person p1 = new Person(80, "p1");
+            Person p1 = new Person(80, "ana");
             Node n1 = new Node(p1);
-            Person p2 = new Person(70, "p2");
+            Person p2 = new Person(70, "marcelo");
             Node n2 = new Node(p2);
-            Person p3 = new Person(60, "p3");
+            Person p3 = new Person(60, "gustavo");
             Node n3 = new Node(p3);
-            Person p4 = new Person(50, "p4");
+            Person p4 = new Person(50, "priscila");
             Node n4 = new Node(p4);
-            Person p5 = new Person(40, "p5");
+            Person p5 = new Person(40, "carlos");
             Node n5 = new Node(p5);
-            Person p6 = new Person(30, "p6");
+            Person p6 = new Person(30, "lucio");
             Node n6 = new Node(p6);
-            Person p7 = new Person(20, "p7");
+            Person p7 = new Person(20, "theo");
             Node n7 = new Node(p7);
-            Person p8 = new Person(10, "p8");
+            Person p8 = new Person(10, "tamara");
             Node n8 = new Node(p8);
 
             n1.AddChildren(n2);
