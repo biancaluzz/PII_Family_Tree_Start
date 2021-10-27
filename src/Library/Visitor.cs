@@ -1,11 +1,14 @@
-using System;
+using System.Collections.Generic;
 
 namespace Library
 {
     public abstract class Visitor
     {
-        public abstract int VisitAgeSum(Node person);
-        public abstract int VisitOldest(Node person);
-        public abstract string VisitLargestName(Node person);
+        public List<Person> family;
+
+        public abstract void VisitAgeSum(Node person);
+        public abstract void VisitOldest(Node person);
+        public abstract void VisitLargestName(Node person);
+
     }
 }

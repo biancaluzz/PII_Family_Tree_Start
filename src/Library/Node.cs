@@ -4,7 +4,7 @@ using System;
 
 namespace Library
 {
-    public class Node : Visitor
+    public class Node 
     {
         Person person;
         public List<Person> family;
@@ -34,42 +34,5 @@ namespace Library
             visitor.VisitOldest(this);
             visitor.VisitLargestName(this);
         }
-
-        public override int VisitAgeSum(Node person)
-        {
-            int result = 0;
-            foreach (Person familiar in family)
-            {
-                result =+ familiar.Age;
-            }
-            return result;
-        }
-        
-        public override int VisitOldest(Node person)
-        {
-            int result = 0;
-            foreach (Person familiar in family)
-            {
-                if (familiar.Age > result)
-                {
-                    result = familiar.Age;
-                }
-            }
-            return result;
-        }
-
-        public override string VisitLargestName(Node person)
-        {
-            string result = "";
-            foreach (Person familiar in family)
-            {
-                if (familiar.Name.Length > result.Length)
-                {
-                    result = familiar.Name;
-                }
-            }
-            return result;
-        }
-        
     }
 }
